@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week_7</string>
+    <string name="user_name">User name</string>
+    <string name="enter_password">Enter password</string>
+    <string name="conform_password">Conform Password</string>
+    <string name="login_in">Login In</string>
+</resources>
