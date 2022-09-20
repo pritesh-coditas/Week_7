@@ -1,8 +1,6 @@
 package com.example.week_7
 
-import android.app.Application
 import android.content.Context
-import android.util.Log
 import androidx.test.core.app.ApplicationProvider
 import com.google.common.truth.Truth.assertThat
 import org.junit.Before
