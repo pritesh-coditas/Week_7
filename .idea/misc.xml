@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_login_success.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_my_espresso.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_second.xml" value="0.1" />
       </map>
     </option>
   </component>

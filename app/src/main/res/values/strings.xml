@@ -5,4 +5,6 @@
     <string name="conform_password">Conform Password</string>
     <string name="login_in">Login In</string>
     <string name="test_value">0</string>
+    <string name="espresso">Espresso</string>
+    <string name="second_activity">Second Activity</string>
 </resources>

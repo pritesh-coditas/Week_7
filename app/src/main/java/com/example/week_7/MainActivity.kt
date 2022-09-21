@@ -3,9 +3,9 @@ package com.example.week_7
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import com.example.week_7.databinding.ActivityMainBinding
+import com.example.week_7.my_integration_espresso.MyEspressoActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
@@ -15,16 +15,19 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val user_name = binding.userNameET.text
-        val user_password = binding.passwordET.text
+        val userName = binding.userNameET.text
+        val userPassword = binding.passwordET.text
 
         binding.loginBtn.setOnClickListener {
-            if (LoginUnitTest.validUserInput(user_name.toString(),user_password.toString())) {
+            if (LoginUnitTest.validUserInput(userName.toString(),userPassword.toString())) {
                 startActivity(Intent(this, LoginSuccessActivity::class.java))
             }
             else{
                 Toast.makeText(this,"check your login details",Toast.LENGTH_SHORT).show()
             }
+        }
+        binding.gotoEspressoActivityBtn.setOnClickListener{
+            startActivity(Intent(this,MyEspressoActivity::class.java))
         }
     }
 }
