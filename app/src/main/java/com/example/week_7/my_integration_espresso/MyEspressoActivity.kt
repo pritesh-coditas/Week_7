@@ -3,7 +3,6 @@ package com.example.week_7.my_integration_espresso
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.week_7.R
 import com.example.week_7.databinding.ActivityMyEspressoBinding
 
 class MyEspressoActivity : AppCompatActivity() {
