@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.week_7.mycoroutine.MyCoroutineActivity
 import com.example.week_7.databinding.ActivityMainBinding
 import com.example.week_7.my_integration_espresso.MyEspressoActivity
 import com.example.week_7.mythread.MyThreadActivity
@@ -34,5 +35,12 @@ class MainActivity : AppCompatActivity() {
         binding.gotoThreadActivityBtn.setOnClickListener{
             startActivity(Intent(this,MyThreadActivity::class.java))
         }
+
+        binding.gotoCoroutineActivityBtn.setOnClickListener{
+            startActivity(Intent(this,MyCoroutineActivity::class.java))
+        }
+
+
+
     }
 }
