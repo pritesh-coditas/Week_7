@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.week_7.databinding.ActivityMainBinding
 import com.example.week_7.my_integration_espresso.MyEspressoActivity
+import com.example.week_7.mythread.MyThreadActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.gotoEspressoActivityBtn.setOnClickListener{
             startActivity(Intent(this,MyEspressoActivity::class.java))
+        }
+
+        binding.gotoThreadActivityBtn.setOnClickListener{
+            startActivity(Intent(this,MyThreadActivity::class.java))
         }
     }
 }
